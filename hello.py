@@ -22,5 +22,9 @@ def hello():
     return 'Hello, World!'
 
 @app.route('/debug-sentry')
+def divide_by_one():
+    division_by_one = 1 / 1
+
+@app.route('/debug-commit')
 def trigger_error():
     division_by_zero = 1 / 0
